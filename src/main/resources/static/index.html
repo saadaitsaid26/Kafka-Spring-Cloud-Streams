@@ -51,6 +51,10 @@
             p1.append(now, counts.P1 || 0);
             p2.append(now, counts.P2 || 0);
         };
+        source.onerror = () => {
+            // The browser reconnection logic takes over automatically.
+            console.warn('SSE connection lost — reconnection in progress…');
+        };
     </script>
 </body>
 </html>

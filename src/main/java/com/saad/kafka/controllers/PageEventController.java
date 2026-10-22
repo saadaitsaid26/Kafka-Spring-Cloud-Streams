@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class PageEventController {
 
+    private static final Random RANDOM = new Random();
+
     private final StreamBridge streamBridge;
 
     public PageEventController(StreamBridge streamBridge) {
@@ -20,7 +22,7 @@ public class PageEventController {
     @GetMapping("/publish")
     public PageEvent publish(@RequestParam String name, @RequestParam(defaultValue = "R2") String topic) {
         String user = Math.random() > 0.5 ? "U1" : "U2";
-        long duration = 10 + new Random().nextInt(10000);
+        long duration = 10 + RANDOM.nextInt(10000);
         PageEvent event = new PageEvent(name, user, new Date(), duration);
         streamBridge.send(topic, event);
         return event;
