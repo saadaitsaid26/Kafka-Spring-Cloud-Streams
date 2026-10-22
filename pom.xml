@@ -13,6 +13,14 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>kafka-spring-cloud-streams</name>
     <description>Real-time page visit analytics with Spring Cloud Stream and Apache Kafka Streams</description>
+    <url>https://github.com/saadaitsaid26/Kafka-Spring-Cloud-Streams</url>
+    <developers>
+        <developer>
+            <id>saadaitsaid26</id>
+            <name>Saad Ait Saidou-Ali</name>
+            <email>60795498+saadaitsaid26@users.noreply.github.com</email>
+        </developer>
+    </developers>
     <properties>
         <java.version>21</java.version>
         <spring-cloud.version>2024.0.2</spring-cloud.version>
