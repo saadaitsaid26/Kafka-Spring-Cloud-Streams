@@ -1,0 +1,14 @@
+target/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+nbproject/
+*.class
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
